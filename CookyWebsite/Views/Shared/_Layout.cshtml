@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scaled=1.0" />
+  <title>@ViewBag.Title</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+        asp-href-include="/lib/bootstrap/**/*.min.css"
+        asp-href-exclude="**/*-reboot*,**/*-grid*" />
+  <link href="~/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<main>
+<header>
+  <nav>
+    <a asp-action="Index" asp-controller="Home"><img class="header-logo" src="~/images/logo.png" alt="Cooky Brand Logo" width="35" /></a>
+    <a class="nav-item" asp-controller="Home" asp-action="Index">Home</a>
+    <a class="nav-item" asp-controller="Home" asp-action="Discover">Discover Receipes</a>
+    <a class="nav-item" asp-controller="Admin" asp-action="Share">Add a Receipe</a>
+  </nav>
+</header>
+
+<section>@RenderBody()</section>
+
+<footer>
+  <div class="content-wrap">Copyright &copy; 2020 Teng Xie</div>
+</footer>
+</main>
+</body>
+</html>

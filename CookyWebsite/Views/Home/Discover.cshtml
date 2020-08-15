@@ -1,0 +1,29 @@
+﻿@model ReceipeListViewModel
+@{
+  ViewBag.Title = "Discover Your Next Favourite | Cooky";
+}
+
+  <section class="discover">
+    <div class="content-wrap">
+      <h2>Discover your new favourite</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Time</th>
+          <th>Category</th>
+        </tr>
+
+        @foreach (var r in Model.Receipes)
+        {
+          <tr>
+            <td>
+              <a asp-action="ViewReceipe" asp-route-receipeID="@r.ReceipeId">@r.Name</a>
+            </td>
+            <td>@r.Time</td>
+            <td>@r.Category</td>
+          </tr>
+        }
+      </table>
+      <div class="discover-paging" page-model="@Model.PagingInfo" page-action="Discover"></div>
+    </div>
+  </section>

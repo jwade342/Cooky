@@ -1,0 +1,12 @@
+﻿@model Receipe
+@{
+  ViewBag.Title = "Thank You! | Cooky";
+}
+
+<section class="thank-you">
+  <div class="content-wrap">
+    <h2>Thank you for the submission</h2>
+    <p><strong>@Model.Name</strong> has successfully submitted!</p>
+    <p>Click <a asp-action="Discover">here</a> to view receipes.</p>
+  </div>
+</section>

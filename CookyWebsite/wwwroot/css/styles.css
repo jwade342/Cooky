@@ -1,0 +1,162 @@
+﻿/*
+https://coolors.co/f7fff6-36393b-e55934-e8aa14-048a81
+$mint-cream: #f7fff6ff;
+$onyx: #36393bff;
+$orange-soda: #e55934ff;
+$goldenrod: #e8aa14ff;
+$celadon-green: #048a81ff;
+*/
+
+/* Global styles
+--------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #eee;
+  color: #36393bff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+a {
+  color: #e55934ff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  height: 800px;
+  margin: 0 auto;
+  padding: 20px 0 60px;
+}
+
+/* Header styles
+--------------------------------------*/
+nav {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #36393bff;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #e8aa14ff ;
+}
+
+/* Index styles
+--------------------------------------*/
+.index {
+  background-image: url('../images/jakub-kapusnak-sdbj1dflfpu-unsplash.jpg');
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+
+.index-welcome {
+  margin-top: 200px;
+  text-align: center;
+}
+
+
+/* Discover styles
+--------------------------------------*/
+.discover {
+  background-image: url("../images/brooke-lark-08bOYnH_r_E-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.discover h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discover table {
+  margin: 0 300px 0 auto;
+}
+
+.discover .discover-paging {
+  position: relative;
+  top: 100px;
+  text-align: right;
+}
+
+/* Add Receipe styles
+--------------------------------------*/
+.add-receipe {
+  background-image: url('../images/leighann-blackwood-olhkqhnhfeg-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+/* Thank You styles
+--------------------------------------*/
+.thank-you {
+  background-image: url('../images/mike-dorner-sf_1zda1yfw-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.thank-you .content-wrap {
+  padding: 100px;
+}
+
+/* View Receipe styles
+--------------------------------------*/
+
+/* Review styles
+--------------------------------------*/
+
+/* Footer styles
+--------------------------------------*/
+footer {
+  background-color: #36393bff;
+  color: #f7fff6ff;
+}
+
+footer .content-wrap {
+  height: 50px;
+  text-align: center;
+}

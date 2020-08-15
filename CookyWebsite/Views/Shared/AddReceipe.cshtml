@@ -1,0 +1,39 @@
+﻿@model Receipe
+
+
+  <div class="content-wrap">
+    <h2>Share yours</h2>
+    <form asp-action="Share" asp-controller="Admin" method="post">
+      <table>
+
+        <tr>
+          <td>Name</td>
+          <td><input asp-for="@Model.Name" /></td>
+        </tr>
+
+        <tr>
+          <td>Category</td>
+          <td><input asp-for="@Model.Category" /></td>
+        </tr>
+
+        <tr>
+          <td>Time</td>
+          <td><input asp-for="@Model.Time" /></td>
+        </tr>
+
+        <tr>
+          <td>Ingredients</td>
+          <td><input asp-for="@Model.Ingredient" /></td>
+        </tr>
+
+        <tr>
+          <td>Detail</td>
+          <td><textarea asp-for="@Model.Detail"></textarea></td>
+        </tr>
+
+      </table>
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+      <button class="btn btn-secondary" asp-controller="Home" asp-action="Discover">Cancel</button>
+    </form>
+  </div>
